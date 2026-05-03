@@ -48,9 +48,10 @@ python bftc.py 000 2
 >[->>>>>+<<<<<]<
 >++++++++++<
 [>[<->->>+>->]<+[->>+>[<<+>>-]>[-]]<<<<]>[[-]<->]<+[>>+>[<<+>>-]<<<[-]]>[-]>[-<<+>>]>[-<<+>>]<<<
-[++++++++++++++++++++++++++++++++++++++++++++++++.[-]]>
+[++++++++++++++++++++++++++++++++++++++++++++++++.[-]>++++++++++++++++++++++++++++++++++++++++++++++++.[-]<]>
 [++++++++++++++++++++++++++++++++++++++++++++++++.[-]]>>>>>
 ++++++++++++++++++++++++++++++++++++++++++++++++.[-]
+
 ```
 
 cases in `001/`
@@ -63,12 +64,21 @@ python bftc.py 001 4
 python bftc.py 001 5
 ```
 
+## Input a space/terminating input
+
+- number must be <= 255
+- requires 3 empty cells(curr, right, right)
+
+```
+>>+[-<,----------[>++++[-<----->]<--[>++++[-<---->]<<[->>++++++++++<<]>>[-<<+>>]<[-<+>]>+<]]>]
+```
+
 ## Notes
 
-thinking about how to take in space separated inputs...  
-notes on this will be in `bf-abc/454/01.bf`
+thinking about how to take in space separated inputs... (N K)
+also thinking about array inputs (A_1, A_2, A_3, ..., A_n)
 
-Also thinking about how to take in an integer n (1<=n<=255) to a cell (wait you can just write to an array terminating at space)
+Also thinking about how to take in an integer n (1<=n<=255) to a cell (wait you can just write to an array terminating at spac maybe then while the cell to the left is nonzero multiply cell by 10 and move across)
 
 ## AC list
 
